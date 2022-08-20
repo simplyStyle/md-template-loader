@@ -1,0 +1,48 @@
+{
+  "name": "md-template-loader",
+  "version": "0.0.1",
+  "description": "support multiple vue template in a markdown doc",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "npm run build -- -w",
+    "clean": "del-cli dist",
+    "prebuild": "npm run clean",
+    "build": "cross-env NODE_ENV=production babel src -d dist --copy-files",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swh4399/md-template-loader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/swh4399/md-template-loader/issues"
+  },
+  "homepage": "https://github.com/swh4399/md-template-loader#readme",
+  "keywords": [
+    "webpack",
+    "loader"
+  ],
+  "author": "swh",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "fs": "^0.0.1-security",
+    "markdown-it": "^13.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "@webpack-contrib/eslint-config-webpack": "^3.0.0",
+    "cross-env": "^7.0.3",
+    "del": "^7.0.0",
+    "del-cli": "^5.0.0",
+    "eslint": "^8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "prettier": "^2.7.1"
+  }
+}
