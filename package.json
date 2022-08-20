@@ -1,6 +1,6 @@
 {
   "name": "md-template-loader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "support multiple vue template in a markdown doc",
   "main": "dist/index.js",
   "files": [
