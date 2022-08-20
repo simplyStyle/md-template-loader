@@ -23,7 +23,11 @@
   "homepage": "https://github.com/swh4399/md-template-loader#readme",
   "keywords": [
     "webpack",
-    "loader"
+    "loader",
+    "template",
+    "md",
+    "markdown",
+    "vue"
   ],
   "author": "swh",
   "license": "ISC",
